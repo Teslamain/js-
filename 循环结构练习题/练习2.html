@@ -1,0 +1,14 @@
+<script>
+    var n = Number(prompt("请输入一个整数"));
+    var maxnum=n;
+    var minnum=n;
+    do{
+        var n = prompt("请输入一个整数，输入q结束");
+        if(n=='q')
+            break;
+        maxnum = maxnum > Number(n) ? maxnum: n;
+        minnum = minnum < Number(n) ? minnum: n;
+    } while(true);
+    console.log('最大值：'+maxnum);
+    console.log('最小值：'+minnum);
+</script>

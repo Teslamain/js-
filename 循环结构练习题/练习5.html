@@ -1,0 +1,21 @@
+<script>
+var num = prompt("请输入班级人数：");
+var array = new Array();
+for(var i=0;i<num;i++){
+    array[i] = Number(prompt("请输入学生成绩："));
+}
+// for(var i=0;i<array.lengtyh-1;i++){
+//     for(var j=0;j<array.length-1-i;j++){
+//         if(array[j]>array[j+1]){
+//             var temp=array[j+1];
+//             array[j+1]=array[j];
+//             arrar[j]=temp;
+//         }
+//     }
+// }
+array.sort(function s(a,b){return b-a;});
+
+console.log(array[0]);
+console.log(array[1]);
+console.log(array[2]);
+</script>
